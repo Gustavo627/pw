@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <h1>Bem vindos Compradores</h1>
+        <p class="hidden">escreve aq dps</p>
+    </section>
+    <section>
+        <h1 class="hidden">Artigos Eletronicos</h1>
+        <P class="hidden">escreve aq tbm</P>
+    </section>
+    <section class="hidden">
+       <img class="ima" src="https://www.wb.com.br/upload/produto/imagem/fone-de-ouvido-headphone-bluetooth-sem-fio-over-ear-wb-gyda-com-100-horas-de-bateria-case-incluso-25.webp" alt="">
+    </section>
+    <section class="container hidden">
+       <div class="foto hidden"><img src="https://galeriadecelular.com/wp-content/uploads/2023/06/galeriadecelular-samsung-galaxy-note-10-plus-5g-01.jpg" alt=""></div>
+       <div class="foto hidden"><img src="https://a-static.mlcdn.com.br/350x350/fone-de-ouvido-compativel-samsung-gran-prime-branco/eletro39/15848727389/edc8a7de80263163441e035d1bbe8926.jpeg" alt=""></div>
+       <div class="foto hidden"><img src="https://p2-ofp.static.pub/fes/cms/2023/02/22/pkhjbh23c7sjfxf76k6e6usevy3ixi851221.png" alt=""></div>
+       <div class="foto hidden"><img src="https://img.terabyteshop.com.br/produto/g/notebook-gamer-superframe-force-intel-core-i5-12450h-rtx-4050-6gb-16gb-ddr4-ssd-1tb_185157.jpg" alt=""></div>
+
+
+
+
+
+    </section>
+</body>
+<script src="script.js">
+    const elements = document.queryy=SelectorAll('.hidden') 
+
+const myObserver = new IntersectionObserver = new InterectionObserver ((obs) =>{
+    obs.forEach ((e) =>{
+        if(e.isIntersecting)
+
+        console.log(e ,e.isIntersecting)
+        e.target.classList.add('visivel')
+    }else{
+        e.target.classList.remove('visivel')  
+    }
+})
+console.log('aqui!')
+} )
+
+elements.forEach( elemt=> myObsever.observe (elemt))
+        
+</script>
+</html>

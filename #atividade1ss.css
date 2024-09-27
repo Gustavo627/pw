@@ -1,0 +1,85 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+    background-color: #fafafa;
+    color: #000000;
+    margin: 50px;
+}
+
+h1{
+    text-align: center;
+    font-size: 100px;
+}
+
+p{
+    font-size: 30px;
+}
+
+section{
+    display: grid;
+    place-items: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.hidden{
+    opacity: 0;
+    transition: all 1.5s;
+    filter:blur(30px);
+    transform: translate3d(-100px,0,0);
+}
+
+.ima{
+    width: 60%;
+}
+
+.visivel{
+    opacity: 1;
+    transition: all 1.5s;
+    filter: blu(0)
+    transform: translate3d(0,0,0);
+}
+.container{
+    display: flex;
+    gap: 20px;
+    justify-content: center
+}
+.foto img{
+    width: 200px;
+    height: 300px;
+}
+
+.foto.visivel:nth-child(2){
+    transition-delay: 400ms;
+}
+
+.foto.visivel:nth-child(3){
+    transition-delay: 800ms;
+}
+
+.foto.visivel:nth-child(4){
+    transition-delay: 1000ms;
+}
+
+const elements = document.queryy=SelectorAll('.hidden') 
+
+const myObserver = new IntersectionObserver = new InterectionObserver ((obs) =>{
+    obs.forEach ((e) =>{
+        if(e.isIntersecting)
+
+        console.log(e ,e.isIntersecting)
+        e.target.classList.add('visivel')
+    }else{
+        e.target.classList.remove('visivel')
+    }
+})
+console.log('aqui!')
+})
+
+elements.forEach( elemt=> myObsever.observe (elemt))
+        
+    
